@@ -101,7 +101,8 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       const Text('Нет аккаунта? '),
                       GestureDetector(
-                        onTap: () => Navigator.of(context).pushNamed(Routes.register),
+                        onTap: () =>
+                            Navigator.of(context).pushNamed(Routes.register),
                         child: const Text(
                           'Зарегистрируйтесь',
                           style: TextStyle(

@@ -11,19 +11,23 @@ void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) => MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: 'Архиваторы',
-    theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF7CB342)), useMaterial3: true),
-    initialRoute: Routes.loading,
-    routes: {
-      Routes.loading: (_) => const LoadingPage(),
-      Routes.login: (_) => const LoginPage(),
-      Routes.register: (_) => const RegisterPage(),
-      Routes.home: (_) => const HomePage(),
-      Routes.profile: (_) => const ProfilePage(),
-      Routes.detail: (_) => const DetailPage(),
-    },
-  );
+        debugShowCheckedModeBanner: false,
+        title: 'Архиваторы',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF7CB342)),
+          useMaterial3: true,
+        ),
+        initialRoute: Routes.loading,
+        routes: {
+          Routes.loading: (_) => const LoadingPage(),
+          Routes.login: (_) => const LoginPage(),
+          Routes.register: (_) => const RegisterPage(),
+          Routes.home: (_) => const HomePage(),
+          Routes.profile: (_) => const ProfilePage(),
+          Routes.detail: (_) => const DetailPage(),
+        },
+      );
 }
