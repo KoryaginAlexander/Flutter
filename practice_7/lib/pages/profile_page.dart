@@ -40,10 +40,19 @@ class _ProfilePageState extends State<ProfilePage> {
       backgroundColor: const Color(0xFFF1F8E9),
       bottomNavigationBar: NavigationBar(
         selectedIndex: 1,
-        onDestinationSelected: (index) { if (index == 0) Navigator.pop(context); },
+        onDestinationSelected: (index) {
+          if (index == 0) Navigator.pop(context);
+        },
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.home_outlined), label: 'Главная'),
-          NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Профиль'),
+          NavigationDestination(
+            icon: Icon(Icons.home_outlined),
+            label: 'Главная',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.person_outline),
+            selectedIcon: Icon(Icons.person),
+            label: 'Профиль',
+          ),
         ],
       ),
       body: SafeArea(

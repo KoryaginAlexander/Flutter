@@ -110,7 +110,10 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         hintText: widget.hintText,
         filled: true,
         fillColor: Colors.white,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 16,
+        ),
         prefixIcon: Icon(widget.prefixIcon, color: const Color(0xFF558B2F)),
         // ExcludeFocus: иконка не участвует в переходе фокуса между полями
         suffixIcon: _isPassword

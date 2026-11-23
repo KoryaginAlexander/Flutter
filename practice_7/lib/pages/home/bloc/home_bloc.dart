@@ -10,7 +10,10 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     on<LoadArchivers>(_onLoadArchivers);
   }
 
-  Future<void> _onLoadArchivers(LoadArchivers event, Emitter<HomeState> emit) async {
+  Future<void> _onLoadArchivers(
+    LoadArchivers event,
+    Emitter<HomeState> emit,
+  ) async {
     emit(const HomeLoading());
     try {
       await Future<void>.delayed(const Duration(milliseconds: 500));
