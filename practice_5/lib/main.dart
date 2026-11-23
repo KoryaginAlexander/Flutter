@@ -1,23 +1,23 @@
-import 'package:flutter/material.dart';
-import 'pages/login_page.dart';
+import 'package:flutter/material.dart'; // Подключаем библиотеку или файл.
+import 'pages/login_page.dart'; // Подключаем библиотеку или файл.
 
-void main() {
-  runApp(const MyApp());
-}
+void main() { // Продолжаем описание элемента.
+  runApp(const MyApp()); // Запускаем приложение.
+} // Закрываем блок.
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyApp extends StatelessWidget { // Объявляем класс.
+  const MyApp({super.key}); // Продолжаем описание элемента.
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Forms',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF7CB342)),
-        useMaterial3: true,
-      ),
-      home: const LoginPage(),
-    );
-  }
-}
+  @override // Переопределяем унаследованный метод.
+  Widget build(BuildContext context) { // Строим интерфейс.
+    return MaterialApp( // Возвращаем результат.
+      debugShowCheckedModeBanner: false, // Задаём параметр.
+      title: 'Forms', // Задаём параметр.
+      theme: ThemeData( // Задаём параметр.
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF7CB342)), // Задаём цвет.
+        useMaterial3: true, // Задаём параметр.
+      ), // Завершаем описание элемента.
+      home: const LoginPage(), // Задаём параметр.
+    ); // Завершаем описание элемента.
+  } // Закрываем блок.
+} // Закрываем блок.
